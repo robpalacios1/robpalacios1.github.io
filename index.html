@@ -1,176 +1,447 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Portafolio</title>
-      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/v4-shims.css">
-      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/style.css">
-   </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/v4-shims.css">
+  <!-- BOOTSTRAP CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- CSS STYLES -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Portfolio</title>
+</head>
+<body>
 
-   
-   <body>
-    <div class="home-wrapper">
-      <header class="container">
-        <nav>
-          <a href="#home" class="active">QUIEN SOY</a>
-          <a href="#habilidades">HABILIDADES</a>
-          <a href="#contacto">CONTACTO<a/>
+  <!-- HEADER -->
 
+  <div id=header>
+    <div class="center">
+      <div class="row p-4">
+        <div class="col-sm-12">
+            <ul class="nav justify-content-end">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning" style="display: block" data-toggle="modal"data-target="#exampleModal">CONTACT ME!!
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Roberto Palacios Full Stack Web Developer</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    <div class="modal-body">
+                      <div class="container">
+                        <div class="row p-1">
+                          <div class="col-sm-12">
+                            <i class="fas fa-envelope-square"><a href="https://robpalacios1@hotmail.com" target="_blank">robpalacios1@hotmail.com</a></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <div class="row p-1">
+                          <div class="col-sm-12">
+                            <i class="fab fa-github"><a href="https://github.com/robpalacios1" target="_blank">GitHub</a></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <div class="row p-1">
+                          <div class="col-sm-12">
+                            <i class="fab fa-linkedin"><a href="https://www.linkedin.com/in/roberto-palacios-32917654/" target="_blank">Linkedin</a></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container">
+                        <div class="row p-1">
+                          <div class="col-sm-12">
+                            <i class="fab fa-whatsapp"><a href="#">+57(5)3023777709</a></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </ul>
+          <h1 class="name">Roberto Palacios</h1>
+          <h2 class="profesion"><em>Full Stack Web Developer</em></h2>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        </header>
+  <!-- ABOUT ME -->
 
-         <section id="home" class="container">
-          <h1><strong>FULL STACK: <em>WEB DEVELOPER</em></strong></h1>
-          <h2><strong>ROBERTO PALACIOS</strong></h2>
-          <p><em>Ingeniero de Sistemas</em></p>
-         </section>
+  <div id="about">
+    <div class="container">
+      <div class="row p-4">
+        <h2>About Me / Acerca de mi</h2>
+        <p> Soy un Full Stack Developer con un año de experiencia trabajando con   tecnologías enfocadas en el desarrollo web. He creado aplicaciones completas, diseñadas e implementadas en la base de datos, escribiendo código tanto para frontend y backend. <br><br>
 
+        I am a Full Stack Developer with a year of experience working with technologies focused on the
+        Web development. I have created complete applications, designed and implemented in the database, writing code for both frontend and backend.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+
+  <div id="skills">
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-sm-12">
+            <h2>Skills / Technologies and experience</h2>
+            <div class="container">
+              <div class="row p-4">
+                  <div class="card" style="width: 18rem;">
+                    <img src="images/habilidades/html_css.png" class="card-img-top" alt="HTML">
+                    <div class="card-body">
+                      <h3><strong>HTML and CSS</strong></h3>
+                      <p class="card-text">Es un lenguaje que se utiliza para el desarrollo de paginas de internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/habilidades/bootstrap_3.png" class="card-img-top" alt="bootstrap_3">
+                      <div class="card-body">
+                        <h3><strong>Bootstrap3</strong></h3>
+                        <p class="card-text">Es un framework desarrollado como objetivo facilitar el diseno web. Permite crear de forma sencilla webs de diseno adaptable, es decir que se ajustan a cualquier dispositivo y tamano de pantalla.</p>
+                      </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/habilidades/bootstrap_4.png" class="card-img-top" alt="bootstrap_4">
+                      <div class="card-body">
+                        <h3><strong>Bootstrap4</strong></h3>
+                        <p class="card-text">Es un framework desarrollado como objetivo facilitar el diseno web. Permite crear de forma sencilla webs de diseno adaptable, es decir que se ajustan a cualquier dispositivo y tamano de pantalla.</p>
+                      </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/habilidades/git_github.png" class="card-img-top" alt="github">
+                      <div class="card-body">
+                        <h3><strong>Git and Github</strong></h3>
+                        <p class="card-text">Es una plataforma de desarrollo colaborativo de software para alojar proyectos utilizando el sistema de control de versiones. Este se almacena de forma publica, aunque tambien se puede de forma privada</p>
+                      </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/habilidades/Ruby_logo.png" class="card-img-top" alt="Ruby_logo">
+                      <div class="card-body">
+                        <h3><strong>Ruby</strong></h3>
+                        <p class="card-text">Ruby es un lenguaje de programación interpretado, reflexivo y orientado a objetos, combina una sintaxisinspirada en Python y Perl con características de programación orientada a objetos. Ruby es un lenguaje de programación interpretado en una sola pasada.</p>
+                      </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/habilidades/sinatra.png" class="card-img-top" alt="sinatra">
+                      <div class="card-body">
+                        <h3><strong>Sinatra</strong></h3>
+                        <p class="card-text">Es un lenguaje que se utiliza para el desarrollo de paginas de internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.</p>
+                      </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/habilidades/Rubyonrails.png" class="card-img-top" alt="Rubyonrails">
+                      <div class="card-body">
+                        <h3><strong>Ruby On Rails</strong></h3>
+                        <p class="card-text">Es un lenguaje que se utiliza para el desarrollo de paginas de internet. Se trata de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.</p>
+                      </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/habilidades/javascript_logo.png" class="card-img-top" alt="javascript_logo">
+                      <div class="card-body">
+                        <h3><strong>Javascript</strong></h3>
+                        <p class="card-text">Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript se define como orientado a objetos,​basado en prototipos, imperativo, débilmente tipado y dinámicotexto.</p>
+                      </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/habilidades/jquery_and_ajax.png" class="card-img-top" alt="jquery_and_ajax">
+                      <div class="card-body">
+                        <h3><strong>Jquery and Ajax</strong></h3>
+                        <p class="card-text">(Asynchronous Javascript and XML) es una técnica de desarrollo web que
+                        al combinar una serie de tecnologías independientes, nos permite intercambiar información entre el servidor
+                        y el cliente.</p>
+                      </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                      <img src="images/habilidades/Ruby_on_RailsII.png" class="card-img-top" alt="Ruby_on_RailsII">
+                      <div class="card-body">
+                        <h3><strong>Jquery and Ajax</strong></h3>
+                        <p class="card-text"><p>También conocido como <strong>RoR o Rails</strong>, es un framework de aplicaciones web de código abierto escrito en ellenguaje de programación Ruby, siguiendo el paradigma
+                          del patrón Modelo Vista Controlador</p>
+                      </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img src="images/habilidades/React_and_Redux.png" class="card-img-top" alt="React_and_Redux">
+                    <div class="card-body">
+                      <h3><strong>React and Redux</strong></h3>
+                      <p class="card-text">Es un contenedor predecible del estado de aplicaciones JavaScript. Te ayuda a escribir aplicaciones que se comportan de manera consistente, corren en distintos ambientes.</p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="images/habilidades/node.jpg" class="card-img-top" alt="node.js">
+                    <div class="card-body">
+                      <h3><strong>Node.js</strong></h3>
+                      <p class="card-text">Es un entorno en tiempo de ejecucion multiplaforma, de codigo abierto, basado en el lenguaje de programacion ECMAScript, asincrono, con I/O de datos en una rquitectura orientada a eventos y basado en el motor V8 de Google.</p>
+                    </div>
+                </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-     <section>
-      <h2>ACERCA DE MI</h2>
-      <p> Ingeniero de Sistemas capaz de aplicar los criterios para la escogencia,</p>
-      <p> montaje y administracion de redes de computo, asi como la </p>
-      <p> realizacion de manera eficiente de la identificacion, analisis, desarrollo</p> 
-      <p> y solucion de problemas en el manejo de informacion en proyectos tecnologicos.</p>
-      <p> Con capacidad de planear, dirigir y coordinar lo recursos tecnicos,</p>
-      <p> financieros y del talento humano para el montaje y operacion de</p> 
-      <p> sistemas de informacion.</p>
-    </section>
+  <!-- PORTFOLIO -->
 
-      <section>
-       <p><strong><em>INFORMACION PERSONAL</em></strong></p>
-       <P><em>Nombre:</em>Roberto Palacios</p>
-       <p><em>Edad:</em>36 años</p>
-       <p><em>E-mail:</em>robpalacios1@hotmail.com</p>
-       <p><em>Ciudad:</em>Barranquilla/Colombia</p>  
-      </section>
-       
-
-       <section>
-        <div class="social">
-          <a href=""><i class="fab fa-facebook"></i></a>
-          <a href=""><i class="fab fa-twitter-square"></i></a>
-          <a href=""><i class="fab fa-github"></i></a>
-        </div>
-       </section>
-
-
-         <section id="habilidades">
-          <div class="container">
-            <h2>HABILIDADES</h2>
-
-            <div class="box">
-              <img src="images/html_css.png" alt="HTML and CSS" width="200" height="300">
-              <h3><strong>HTML and CSS</strong></h3>
-              <p><strong>HTML</strong>, es un lenguaje que se utiliza para el<p> 
-              <p>desarrollo de paginas de internet. Se trata de la siglas que corresponden a</p> 
-              <p>HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.</p>
+  <div id="portfolio">
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-sm-12">
+          <h2>Portfolio / Portafolio</h2>
+          <div class="container-mid">
+            <div class="container">
+              <div class="row p-2">
+                <div class="col-sm-12">
+                    <h3>GITHUB</h3>
+                    <h4><em>Github</em></h4>
+                    <img src="images/github.png" width="100%" alt="Github Profile">
+                </div>
+                <div class="col-sm-12">
+                  <p>I have experience working with Control Version Software how Git, on Github you can find my proyects, repositories of contribution and study.</p>
+                </div>
+                <button class="button1"> <a href="https://github.com/robpalacios1" target="_blank" class="button1">Go GitHub</a> </button>
+              </div>
             </div>
 
-            <div class="box">
-              <img src="images/bootstrap_3.png" alt="bootstrap 3" width="200" height="300">
-              <h3><strong>Bootstrap 3</strong></h3>
-              <p><strong>Bootstrap</strong>, es un framework desarrollado como objetivo facilitar</p>
-              <p>el diseno web. Permite crear de forma sencilla webs de diseno adaptable,</p>
-              <p>es decir que se ajustan a cualquier dispositivo y tamano de pantalla.</p>
+            <hr>
+
+            <div class="container">
+              <div class="row p-4">
+                <div class="col-sm-12">
+                    <h3>BOOKS</h3>
+                    <h4><em>Books</em></h4>
+                    <img src="images/book.png" width="100%" alt="Book Suscribe">
+                </div>
+              </div>
             </div>
-
-            <div class="box">
-              <img src="images/bootstrap_4.png" alt="bootstrap 4" width="200" height="300">
-              <h3><strong>Bootstrap 4</strong></h3>
-              <p><strong>Bootstrap</strong>, es un framework desarrollado como objetivo facilitar
-              <p>el diseno web. Permite crear de forma sencilla webs de diseno adaptable,</p>
-              <p>es decir que se ajustan a cualquier dispositivo y tamano de pantalla.</p>
+            <div class="col-sm-12">
+              <p>I made this web page to put knowledge into practice in the web development layout </p>
             </div>
+            <button class="button2"><a href="https://robpalacios1.github.io/robpalacios1-bootstrap_website.github.io/" target="_blank">Go Proyect</a></button>
 
-            <div class="box">
-              <img src="images/git_github.png" alt="Git and Github" width="200" height="300" >
-              <h3><strong>Git and Github</strong></h3>
-              <p><strong>Git and Github</strong>, es una plataforma de desarrollo colaborativo de software para</p>
-              <p>alojar proyectos utilizando el sistema de control de versiones. Este se almacena</p> 
-              <p>de forma publica, aunque tambien se puede de forma privada</p>
+            <hr>
+
+            <div class="container">
+              <div class="row p-4">
+                <div class="col-sm-12">
+                    <h3>E-COMMERCE</h3>
+                    <h4><em>E-commerce</em></h4>
+                    <img src="images/ecommerce.png" width="100%" alt="E-commerce">
+                </div>
+              </div>
             </div>
-
-            <div class="box">
-              <img src="images/Ruby_logo.png" alt="Ruby" width="200" height="242">
-              <h3><strong>Ruby</strong></h3>
-              <p><strong>Ruby</strong>, Ruby es un lenguaje de programación interpretado, reflexivo y orientado</p> 
-              <p> a objetos, combina una sintaxisinspirada en Python y Perl con características de programación 
-              <p>orientada a objetos. Ruby es un lenguaje de programación interpretado en una sola pasada.</p>
+            <div class="col-sm-12">
+              <p>participate in the complete development of the web page design<p>
             </div>
+            <button class="button3"><a href="https://robpalacios1.github.io/ecommerce2/" target="_blank">Go Proyect</a></button>
 
-            <div class="box">
-              <img src="images/sinatra.png" alt="Sinatra" width="200" height="300">
-              <h3><strong>Sinatra</strong></h3>
-              <p><strong>Sinatra</strong>, es un lenguaje que se utiliza para el
-              <p>desarrollo de paginas de internet. Se trata de la siglas que corresponden a</p> HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.</p>
+            <hr>
+
+            <div class="container">
+              <div class="row p-4">
+                <div class="col-sm-12">
+                    <h3>FORM</h3>
+                    <h4><em>Form</em></h4>
+                    <img src="images/form.png" width="100%" alt="Form">
+                </div>
+              </div>
             </div>
-
-            <div class="box">
-              <img src="images/Rubyonrails.png" alt="Ruby On Rails" width="200" height="335">
-              <h3><strong>Ruby On Rails</strong></h3>
-              <p><strong>Ruby On Rails</strong>, es un lenguaje que se utiliza para el
-              <p>desarrollo de paginas de internet. Se trata de la siglas que corresponden a</p> HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto.</p>
+            <div class="col-sm-12">
+                <p>I made this web page to put knowledge into practice in the web development layout </p>
             </div>
+            <button class="button4"><a href="https://robpalacios1.github.io/form/" target="_blank">Go Proyect</a></button>
 
-            <div class="box">
-              <img src="images/javascript_logo.png" alt="Javascript" width="200" height="352">
-              <h3><strong>Javascript</strong></h3>
-              <p><strong>Javascript</strong>, es un lenguaje de programación interpretado, dialecto del estándar ECMAScript</p>
-              <p>se define como orientado a objetos,​basado en prototipos, imperativo, débilmente tipado y dinámicotexto.</p>
+            <hr>
+
+            <div class="container">
+              <div class="row p-4">
+                <div class="col-sm-12">
+                    <h3>HOVER EFFECTS</h3>
+                    <h4><em>Hover</em></h4>
+                    <img src="images/hover.png" width="100%" alt="hover-effects">
+                </div>
+              </div>
             </div>
-
-            <div class="box">
-              <img src="images/jquery_and_ajax.png" alt="Jquery and ajax" width="200" height="300">
-              <h3><strong>Jquery and Ajax </strong></h3>
-              <p><strong>Jquery and Ajax</strong>, (Asynchronous Javascript and XML) es una técnica de desarrollo web que</p> 
-              <p>al combinar una serie de tecnologías independientes, nos permite intercambiar información entre el servidor</p> 
-              <p>y el cliente.</p> 
+            <div class="col-sm-12">
+                <p>I made this web page to put knowledge into practice in the web development layout </p>
             </div>
+            <button class="button5"><a href="https://robpalacios1.github.io/hover-effects/" target="_blank">Go Proyect</a></button>
 
-            <div class="box">
-              <img src="images/Ruby_on_RailsII.png" alt="Ruby On Rails II" width="200" height="280">
-              <h3><strong>Ruby on Rails</strong></h3>
-              <p><strong>Ruby on Rails</strong>, también conocido como <strong>RoR o Rails</strong>, es un framework de</p> 
-              <p>aplicaciones web de código abierto escrito en ellenguaje de programación Ruby, siguiendo el paradigma</p> 
-              <p>del patrón Modelo Vista Controlador</p>
+            <hr>
+
+            <div class="container">
+              <div class="row p-4">
+                <div class="col-sm-12">
+                    <h3>JAGUAR XE</h3>
+                    <h4><em>Jaguar</em></h4>
+                    <img src="images/jaguar.png" width="100%" alt="landing_Jaguar">
+                </div>
+              </div>
             </div>
-
-            <div class="box">
-              <img src="images/React_and_Redux.png" alt="React and Redux" width="200" height="300">
-              <h3><strong>React and redux</strong></h3>
-              <p><strong>React and redux</strong>,es un contenedor predecible del estado de aplicaciones JavaScript.</p> 
-              <p>Te ayuda a escribir aplicaciones que se comportan de manera consistente, corren en distintos ambientes.</p>
+            <div class="col-sm-12">
+                <p>I made this web page to put knowledge into practice in the web development layout </p>
             </div>
+            <button class="button6"><a href="https://robpalacios1.github.io/robpalacios1-landing_page.github.io/" target="_blank">Go Proyect</a></button>
 
+            <hr>
 
+            <div class="container">
+              <div class="row p-4">
+                <div class="col-sm-12">
+                    <h3>LANDING PAGE</h3>
+                    <h4><em>Landing</em></h4>
+                    <img src="images/landing.png" width="100%" alt="landing_test">
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12">
+                <p>I made this web page to put knowledge into practice in the web development layout </p>
+            </div>
+            <button class="button7"><a href="https://robpalacios1.github.io/landing/" target="_blank">Go Proyect</a></button>
+
+            <hr>
+
+            <div class="container">
+                <div class="row p-4">
+                  <div class="col-sm-12">
+                      <h3>FALLING SHEETS</h3>
+                      <h4><em>Falling Sheets</em></h4>
+                      <img src="images/otono.png" width="100%" alt="Falling_sheets">
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-12">
+                  <p>I made this web page to put knowledge into practice in the web development layout </p>
+            </div>
+            <button class="button8"><a href="https://robpalacios1.github.io/otono/" target="_blank">Go Proyect</a></button>
+
+            <hr>
+
+            <div class="container">
+                <div class="row p-4">
+                  <div class="col-sm-12">
+                      <h3>PHONES INFO</h3>
+                      <h4><em>Phone</em></h4>
+                      <img src="images/phones.png" width="100%" alt="Phones">
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-12">
+                  <p>I made this web page to put knowledge into practice in the web development layout </p>
+            </div>
+            <button class="button9"><a href="https://robpalacios1.github.io/robpalacios1-phones/" target="_blank">Go Proyect</a></button>
+
+            <hr>
+
+            <div class="container">
+                <div class="row p-4">
+                  <div class="col-sm-12">
+                      <h3>RGB CHALLENGUE</h3>
+                      <h4><em>RGB</em></h4>
+                      <img src="images/rgbchallengue.png" width="100%" alt="rgb_challengue">
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-12">
+                  <p>I made this web page to put knowledge into practice in the web development layout </p>
+            </div>
+            <button class="button10"><a href="https://robpalacios1.github.io/rgbchallenge/" target="_blank">Go Proyect</a></button>
+
+            <hr>
+
+            <div class="container">
+                <div class="row p-4">
+                  <div class="col-sm-12">
+                      <h3>SHOES WEB</h3>
+                      <h4><em>Shoes</em></h4>
+                      <img src="images/shoes.png" width="100%" alt="shoes_web">
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-12">
+                  <p>I made this web page to put knowledge into practice in the web development layout </p>
+            </div>
+            <button class="button11"><a href="https://robpalacios1.github.io/shoesweb/" target="_blank">Go Proyect</a></button>
+
+            <hr>
+
+            <div class="container">
+                <div class="row p-4">
+                  <div class="col-sm-12">
+                      <h3>STUDIO DEV</h3>
+                      <h4><em>Studio Dev</em></h4>
+                      <img src="images/studiodev.png" width="100%" alt="studiodev">
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-12">
+                  <p>I made this web page to put knowledge into practice in the web development layout </p>
+            </div>
+            <button class="12"><a href="https://robpalacios1.github.io/studiodev/" target="_blank">Go Proyect</a></button>
+
+            <hr>
+
+            <div class="container">
+                <div class="row p-4">
+                  <div class="col-sm-12">
+                      <h3>VACATIONS</h3>
+                      <h4><em>Vacations</em></h4>
+                      <img src="images/vacations.png" width="100%" alt="vacation_web">
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-12">
+                  <p>I made this web page to put knowledge into practice in the web development layout </p>
+            </div>
+            <button class="button13"><a href="https://robpalacios1.github.io/vacations/" target="_blank">Go Proyect</a></button>
           </div>
-          
+        </div>
+      </div>
+    </div>
+  </div>
 
-        
-   
-         </section>
+  <!-- FOOTER -->
 
-         <section id="contacto">
-          <h2>CONTACTO</h2>
-            <form>
-             <div><input type="text" placeholder="Tu E-mail"></div>
-             <div><textarea rows="10" placeholder="Mensaje"></textarea></div>
-             <div><button>ENVIAR</button></div>
-            </form>
-          </section>
+  <div id="footer">
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-sm-12">
+            <p class="cpryt">&copy; Copyright 2019 All right reserved.</br>Made by Roberto Palacios.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-         <footer>
-           @ 2018 <strong>Roberto Palacios</strong>, TODOS LOS DERECHOS RESERVADOS.
-         </footer>
-
-
-   </body>
-
-
-
-
+  <!-- SCRIPT BOOTSTRAP -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>

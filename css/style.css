@@ -1,152 +1,177 @@
-* { box-sizing: border-box; } 
-
 body{
-	font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-.home-wrapper{
-	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/analisis_sistemas.jpg') no-repeat center top;
-	background-size: cover;
-	color: white;
+#navbar{
+    background: rgb(204, 204, 204)
 }
 
-header{
-	padding: 10px 0;
+#header{
+    background-image: url("../images/binary.jpg");
+    background-attachment: fixed;
 }
 
-header nav{
-	float: right;
-	margin-top: 10px;
+#header .center h1{
+    padding: 50px;
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
 }
 
-header nav a{
-	color: white;
-	font-weight: bold;
-	text-decoration: none;
-	margin-left: 10px;
-	padding: 10px 15px;
-	border-radius: 20px;
-}
-
-header nav a.active{
-	background: brown;
+#header .center h2{
+    text-align: right;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
 }
 
 
-#home{
-	text-align: center;
-	padding: 200px 0 150px;
+#about h2{
+    font-size: 25px;
+    font-weight: bold;
 }
 
-#home h1{
-	font-size: 68px;
-	font-weight: normal;
+#about p{
+    padding: 50px;
+    font-size: 20px;
 }
 
-#home h2{
-	font font-size: 24px;
-	color: white;
-
+#skills {
+    background-color: #F9F9F9
 }
 
-#home .social{
-	margin-top: 80px;
-    display
+#skills h2{
+font-size: 25px;
+font-weight: bold;
 }
 
-#home .social a{
-	color: white;
-	display: inline-block;
-	border-radius: 50%;
-	background-color: black
-	font-size: 24px;
-	font-weight: bold;
-	height: 50px;
-	width: 50px;
-	line-height: 50px;
-	margin-right: 10px;
-}
-#habilidades{
-	background-color: whitesmoke;
+#skills .card{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
-#habilidades .box{ 
-	display: inline-block;
-	text-align: center;
-	width: 31%;
-	margin: 1%;
-	padding: 10px;
-	background-color: white;
-
+#skills ol{
+    padding: 30px;
+    font-size: 20px;
 }
 
-#habilidades .box img{
-	width: 100%;
+#skills i{
+    padding: 10px;
+    text-align: right;
 }
 
-#portafolio .box p{
-	color: #666;
-	padding: 10px;
+#portfolio h2{
+    padding: 40px;
+    text-align: center;
+    font-size: 40px;
 }
 
-#contacto{
-	background-color: #303030;
-	background-image: url('../images/formulario.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	text-align: center; 
+#portfolio img{
+    border-bottom: 10px solid #ccc;
+    border-top: 10px solid #ccc;
+    border-right: 10px solid #ccc;
+    border-left: 10px solid #ccc;
 }
 
-#contacto h2{
-	color: black;
+#portfolio p{
+    font-size: 20px;
 }
 
-#contacto input{
-	padding: 20px;
-	width: 400px;
-	border: 1px; solid #ccc
-	border-radius: 3px;
+#portfolio .button1{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
 }
 
-#contacto textarea{
-	margin: 20px 0;
-	padding: 20px;
-	width: 400px;
+#portfolio .button2{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
 }
 
-#contacto button{
-	padding: 20px 40px;
-	border-color: black;
-	border-radius: 6px
-	color: white;
-	font-size: 18px;
-	line-height: 1;
-	font-weight: bold;
-
+#portfolio .button3{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
 }
 
-footer{
-	padding: 90px 0;
-	text-align: center;
-	font-size: 18px;
+#portfolio .button4{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
 }
 
-section{
-	padding: 80px 0;
+#portfolio .button5{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
 }
 
-section h2{
-	font-size: 32px;
-	text-align: center;
-	margin-bottom: 80px;
+#portfolio .button6{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
 }
 
-.container{
-	width: 992px;
-	margin-left: auto;
-	margin-right: auto;
+#portfolio .button7{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
 }
 
+#portfolio .button8{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
+}
 
+#portfolio .button9{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
+}
 
+#portfolio .button10{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
+}
 
+#portfolio .button11{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
+}
+
+#portfolio .button12{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
+}
+
+#portfolio .button13{
+    color: #444;
+    transition: 300ms all;
+    border-radius: 15%;
+    box-shadow: 1px;
+}
+
+#footer{
+    background: #F9F9F9;
+    text-align: center;
+    font-size: 20px;
+}
