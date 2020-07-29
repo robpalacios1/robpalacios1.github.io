@@ -51,6 +51,7 @@ font-weight: bold;
     border-bottom: 3px solid #ccc;
     border-left: 3px solid #ccc;
     border-right: 3px solid #ccc;
+    border-radius: 10px;
 }
 
 #skills ol{
@@ -74,6 +75,7 @@ font-weight: bold;
     border-top: 3px solid #ccc;
     border-right: 3px solid #ccc;
     border-left: 3px solid #ccc;
+    border-radius: 10px;
 }
 
 #portfolio p{
