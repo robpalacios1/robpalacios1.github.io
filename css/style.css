@@ -69,10 +69,10 @@ font-weight: bold;
 }
 
 #portfolio img{
-    border-bottom: 10px solid #ccc;
-    border-top: 10px solid #ccc;
-    border-right: 10px solid #ccc;
-    border-left: 10px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    border-top: 3px solid #ccc;
+    border-right: 3px solid #ccc;
+    border-left: 3px solid #ccc;
 }
 
 #portfolio p{
