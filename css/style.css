@@ -25,7 +25,6 @@ body{
     color: #fff;
 }
 
-
 #about h2{
     font-size: 25px;
     font-weight: bold;
@@ -46,10 +45,12 @@ font-weight: bold;
 }
 
 #skills .card{
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+    margin-right: 9px;
+    margin-bottom: 9px;
+    border-top: 3px solid #ccc;
+    border-bottom: 3px solid #ccc;
+    border-left: 3px solid #ccc;
+    border-right: 3px solid #ccc;
 }
 
 #skills ol{
