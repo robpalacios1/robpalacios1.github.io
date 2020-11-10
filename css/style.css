@@ -1,89 +1,99 @@
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-#navbar{
-    background: rgb(204, 204, 204)
+#navbar {
+  background: rgb(204, 204, 204);
 }
 
-#header{
-    background-image: url("../images/binary.jpg");
-    background-attachment: fixed;
+#header {
+  background-image: url("../images/binary.jpg");
+  background-attachment: fixed;
 }
 
-#header .center h1{
-    padding: 50px;
-    text-align: center;
-    font-size: 60px;
-    color: #fff;
+#header .center h1 {
+  padding: 50px;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
 }
 
-#header .center h2{
-    text-align: right;
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
+#header .center h2 {
+  text-align: right;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
 }
 
-#about h2{
-    font-size: 25px;
-    font-weight: bold;
+#about h2 {
+  font-size: 25px;
+  font-weight: bold;
 }
 
-#about p{
-    padding: 50px;
-    font-size: 20px;
+#about p {
+  padding: 50px;
+  font-size: 20px;
 }
 
 #skills {
-    background-color: #F9F9F9
+  background-color: #f9f9f9;
 }
 
-#skills h2{
-font-size: 25px;
-font-weight: bold;
+#skills h2 {
+  font-size: 25px;
+  font-weight: bold;
 }
 
-#skills .card{
-    margin-right: 9px;
-    margin-bottom: 9px;
-    border-top: 3px solid #ccc;
-    border-bottom: 3px solid #ccc;
-    border-left: 3px solid #ccc;
-    border-right: 3px solid #ccc;
-    border-radius: 10px;
+#skills .card {
+  margin-right: 9px;
+  margin-bottom: 9px;
+  border-top: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  border-left: 3px solid #ccc;
+  border-right: 3px solid #ccc;
+  border-radius: 10px;
 }
 
-#skills ol{
-    padding: 30px;
-    font-size: 20px;
+.card:hover {
+  border-color: 2px solid black;
+  box-shadow: 0px 0px 30px #1a30cd;
 }
 
-#skills i{
-    padding: 10px;
-    text-align: right;
+#skills ol {
+  padding: 30px;
+  font-size: 20px;
 }
 
-#portfolio h2{
-    padding: 40px;
-    text-align: center;
-    font-size: 40px;
+#skills i {
+  padding: 10px;
+  text-align: right;
 }
 
-#portfolio img{
-    border-bottom: 3px solid #ccc;
-    border-top: 3px solid #ccc;
-    border-right: 3px solid #ccc;
-    border-left: 3px solid #ccc;
-    border-radius: 10px;
+#portfolio h2 {
+  padding: 40px;
+  text-align: center;
+  font-size: 40px;
 }
 
-#portfolio p{
-    font-size: 20px;
+#portfolio img {
+  border-bottom: 3px solid #ccc;
+  border-top: 3px solid #ccc;
+  border-right: 3px solid #ccc;
+  border-left: 3px solid #ccc;
+  border-radius: 10px;
 }
 
-#footer{
-    background: #F9F9F9;
-    text-align: center;
-    font-size: 20px;
+img:hover {
+  border-color: 2px solid black;
+  box-shadow: 0px 0px 30px #1a30cd;
+}
+
+#portfolio p {
+  font-size: 20px;
+}
+
+#footer {
+  background: #f9f9f9;
+  text-align: center;
+  font-size: 20px;
 }
