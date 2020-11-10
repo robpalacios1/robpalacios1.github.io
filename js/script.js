@@ -1,4 +1,4 @@
 const year = new Date();
-document.write(year.getFullYear());
+document.write(year.toString());
 
-<script type="text/javascript">{year}</script>;
+console.log(`Año: ${year.getFullYear()}`);
