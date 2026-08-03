@@ -1,873 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- FONT AWESOME -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/v4-shims.css">
-  <!-- BOOTSTRAP CDN -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-  <!-- CSS STYLES -->
-  <link rel="stylesheet" href="css/style.css">
-  <title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roberto Palacios | DevOps Engineer & Cloud Architect</title>
+<meta name="description" content="Roberto Palacios — DevOps Engineer & Cloud Architect specializing in AWS, Kubernetes, Terraform and CI/CD automation.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <!-- HEADER -->
+<div class="bg-fx"></div>
+<div class="grid-overlay"></div>
+<canvas id="particles"></canvas>
 
-  <div id=header>
-    <div class="center">
-      <div class="row p-4">
-        <div class="col-sm-12">
-          <ul class="nav justify-content-end">
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-warning" style="display: block" data-toggle="modal"
-              data-target="#exampleModal">CONTACT ME!!
-            </button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Roberto Palacios Full Stack Web Developer</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <div class="container">
-                      <div class="row p-1">
-                        <div class="col-sm-12">
-                          <i class="fas fa-envelope-square"><a href="https://robpalacios1@hotmail.com"
-                              target="_blank">robpalacios1@hotmail.com</a></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="container">
-                      <div class="row p-1">
-                        <div class="col-sm-12">
-                          <i class="fab fa-github"><a href="https://github.com/robpalacios1"
-                              target="_blank">GitHub</a></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="container">
-                      <div class="row p-1">
-                        <div class="col-sm-12">
-                          <i class="fab fa-linkedin"><a href="https://www.linkedin.com/in/roberto-palacios-32917654/"
-                              target="_blank">Linkedin</a></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="container">
-                      <div class="row p-1">
-                        <div class="col-sm-12">
-                          <i class="fab fa-whatsapp"><a href="#">+57(5)3023777709</a></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-          </ul>
-          <h1 class="name">Roberto Palacios</h1>
-          <h2 class="profesion"><em>Full Stack Web Developer</em></h2>
+<header>
+  <nav>
+    <div class="logo">Roberto<span>.</span>Palacios</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certs">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-ghost" href="https://github.com/robpalacios1" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-primary" href="#contact">Let's talk</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="reveal show">
+      <div class="eyebrow"><span class="pulse-dot"></span> Available for remote DevOps & Cloud roles</div>
+      <h1>Building resilient <span class="gradient-text">cloud infrastructure</span>, one pipeline at a time.</h1>
+      <div class="role-line"><span id="typedRole">DevOps Engineer</span><span class="type-cursor"></span></div>
+      <p class="lead">I design, automate and scale infrastructure on AWS with Terraform, Kubernetes and GitOps CI/CD — turning manual operations into reliable, repeatable systems.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/robpalacios1/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>6+</b><span>Featured IaC Projects</span></div>
+        <div class="stat"><b>2</b><span>AWS Certifications</span></div>
+        <div class="stat"><b>144</b><span>Public Repositories</span></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal show">
+      <div class="orbit-card">
+        <div class="terminal-dots"><span></span><span></span><span></span></div>
+        <div class="terminal-body">
+          <div><span class="green">$</span> terraform apply</div>
+          <div class="muted">Plan: 18 to add, 0 to change, 0 to destroy.</div>
+          <div><span class="cyan">module.eks</span>: Creating...</div>
+          <div><span class="cyan">module.rds</span>: Creating...</div>
+          <div class="green">✔ Apply complete! Resources: 18 added.</div>
+          <div>&nbsp;</div>
+          <div><span class="green">$</span> kubectl get pods -n dev</div>
+          <div class="muted">users-service&nbsp;&nbsp;&nbsp;1/1&nbsp;&nbsp;Running</div>
+          <div class="muted">orders-service&nbsp;&nbsp;1/1&nbsp;&nbsp;Running</div>
+          <div class="muted">products-service 1/1&nbsp;&nbsp;Running</div>
+          <div>&nbsp;</div>
+          <div><span class="pink">CI/CD</span> pipeline: <span class="green">passing</span> ✔</div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- ABOUT ME -->
-
-  <div id="about">
-    <div class="container">
-      <div class="row p-4">
-        <h2>About Me / Acerca de mi</h2>
-        <p> Soy un Full Stack Developer con un año de experiencia trabajando con tecnologías enfocadas en el desarrollo
-          web. He creado aplicaciones completas, diseñadas e implementadas en la base de datos, escribiendo código tanto
-          para frontend y backend. <br><br>
-
-          I am a Full Stack Developer working with technologies focused on web development. I have created complete
-          applications for Frontend and Backend.</p>
-      </div>
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-tag">About Me</div>
+      <h2 class="section-title">Turning infrastructure into <span class="gradient-text">code</span></h2>
     </div>
-  </div>
-  </div>
-
-  <!-- Skills -->
-
-  <div id="skills">
-    <div class="container">
-      <div class="row p-4">
-        <div class="col-sm-12">
-          <h2>Skills / Technologies and experience</h2>
-          <div class="container">
-            <div class="row p-4">
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/html_css.png" class="card-img-top" alt="HTML">
-                <div class="card-body">
-                  <h3><strong>HTML and CSS</strong></h3>
-                  <p class="card-text">Es un lenguaje que se utiliza para el desarrollo de paginas de internet. Se trata
-                    de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de
-                    Hipertexto.
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/bootstrap_3.png" class="card-img-top" alt="bootstrap_3">
-                <div class="card-body">
-                  <h3><strong>Bootstrap3</strong></h3>
-                  <p class="card-text">Es un framework desarrollado como objetivo facilitar el diseno web. Permite crear
-                    de forma sencilla webs de diseno adaptable, es decir que se ajustan a cualquier dispositivo y tamano
-                    de pantalla.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/bootstrap_4.png" class="card-img-top" alt="bootstrap_4">
-                <div class="card-body">
-                  <h3><strong>Bootstrap4</strong></h3>
-                  <p class="card-text">Es un framework desarrollado como objetivo facilitar el diseno web. Permite crear
-                    de forma sencilla webs de diseno adaptable, es decir que se ajustan a cualquier dispositivo y tamano
-                    de pantalla.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/git_github.png" class="card-img-top" alt="github">
-                <div class="card-body">
-                  <h3><strong>Git and Github</strong></h3>
-                  <p class="card-text">Es una plataforma de desarrollo colaborativo de software para alojar proyectos
-                    utilizando el sistema de control de versiones. Este se almacena de forma publica, aunque tambien se
-                    puede de forma privada</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/Ruby_logo.png" class="card-img-top" alt="Ruby_logo">
-                <div class="card-body">
-                  <h3><strong>Ruby</strong></h3>
-                  <p class="card-text">Ruby es un lenguaje de programación interpretado, reflexivo y orientado a
-                    objetos, combina una sintaxisinspirada en Python y Perl con características de programación
-                    orientada a objetos. Ruby es un lenguaje de programación interpretado en una sola pasada.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/sinatra.png" class="card-img-top" alt="sinatra">
-                <div class="card-body">
-                  <h3><strong>Sinatra</strong></h3>
-                  <p class="card-text">Es un lenguaje que se utiliza para el desarrollo de paginas de internet. Se trata
-                    de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de
-                    Hipertexto.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/Rubyonrails.png" class="card-img-top" alt="Rubyonrails">
-                <div class="card-body">
-                  <h3><strong>Ruby On Rails</strong></h3>
-                  <p class="card-text">Es un lenguaje que se utiliza para el desarrollo de paginas de internet. Se trata
-                    de la siglas que corresponden a HyperText Markup Language, es decir, Lenguaje de Marcas de
-                    Hipertexto.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/javascript_logo.png" class="card-img-top" alt="javascript_logo">
-                <div class="card-body">
-                  <h3><strong>Javascript</strong></h3>
-                  <p class="card-text">Es un lenguaje de programación interpretado, dialecto del estándar ECMAScript se
-                    define como orientado a objetos,​basado en prototipos, imperativo, débilmente tipado y
-                    dinámicotexto.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/jquery_and_ajax.png" class="card-img-top" alt="jquery_and_ajax">
-                <div class="card-body">
-                  <h3><strong>Jquery and Ajax</strong></h3>
-                  <p class="card-text">(Asynchronous Javascript and XML) es una técnica de desarrollo web que
-                    al combinar una serie de tecnologías independientes, nos permite intercambiar información entre el
-                    servidor
-                    y el cliente.</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/Ruby_on_RailsII.png" class="card-img-top" alt="Ruby_on_RailsII">
-                <div class="card-body">
-                  <h3><strong>Ruby</strong></h3>
-                  <p class="card-text">
-                  <p>También conocido como <strong>RoR o Rails</strong>, es un framework de aplicaciones web de código
-                    abierto escrito en ellenguaje de programación Ruby, siguiendo el paradigma
-                    del patrón Modelo Vista Controlador</p>
-                </div>
-              </div>
-
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/React_and_Redux.png" class="card-img-top" alt="React_and_Redux">
-                <div class="card-body">
-                  <h3><strong>React and Redux</strong></h3>
-                  <p class="card-text">Es un contenedor predecible del estado de aplicaciones JavaScript. Te ayuda a
-                    escribir aplicaciones que se comportan de manera consistente, corren en distintos ambientes.</p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/node.jpg" class="card-img-top" alt="node.js">
-                <div class="card-body">
-                  <h3><strong>Node.js</strong></h3>
-                  <p class="card-text">Es un entorno en tiempo de ejecucion multiplaforma, de codigo abierto, basado en
-                    el lenguaje de programacion ECMAScript, asincrono, con I/O de datos en una rquitectura orientada a
-                    eventos y basado en el motor V8 de Google.</p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/Python.png" class="card-img-top" alt="Python">
-                <div class="card-body">
-                  <h3><strong>Python</strong></h3>
-                  <p class="card-text">Python es un lenguaje de programación interpretado cuya filosofía hace hincapié
-                    en la legibilidad de su código.​ Se trata de un lenguaje de programación multiparadigma, ya que
-                    soporta orientación a objetos, programación imperativa y, en menor medida, programación funcional.
-                  </p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/C-language.png" class="card-img-top" alt="C-language">
-                <div class="card-body">
-                  <h3><strong>C Language</strong></h3>
-                  <p class="card-text">Se trata de un lenguaje de tipos de datos estáticos, débilmente tipificado, de
-                    medio nivel, ya que dispone de las estructuras típicas de los lenguajes de alto nivel pero, a su
-                    vez, dispone de construcciones del lenguaje que permiten un control a muy bajo nivel.</p>
-                </div>
-              </div>
-              <div class="card" style="width: 18rem;">
-                <img src="images/habilidades/Linux.png" height="42%" class="card-img-top" alt="Linux">
-                <div class="card-body">
-                  <h3><strong>GNU/Linux</strong></h3>
-                  <p class="card-text">El desarrollo de estos sistemas operativos es uno de los ejemplos más prominentes
-                    de software libre: todo su código fuente puede ser utilizado, modificado y redistribuido libremente
-                    por cualquier persona, empresa o institución, bajo los términos de la Licencia Pública General de
-                    GNU, así como de otra serie de licencias, si se desea.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a DevOps Engineer and Cloud Architect based in Barranquilla, Colombia, focused on optimizing cloud infrastructure and driving automation across the full delivery lifecycle. My work centers on Infrastructure as Code, container orchestration, and building CI/CD pipelines that let teams ship faster without sacrificing reliability.</p>
+        <p>I specialize in designing scalable, secure, and resilient architectures on AWS — from multi-AZ networking and managed Kubernetes clusters to GitOps-driven release pipelines with OIDC-based authentication. I care about infrastructure that is reproducible, observable, and safe to change.</p>
+        <p>Currently deepening my expertise in Kubernetes, Terraform, and multi-cloud CI/CD, while holding AWS certifications in cloud fundamentals and solutions architecture.</p>
+        <div class="facts">
+          <div class="fact-card"><b>Location</b><span>Barranquilla, Colombia (Remote)</span></div>
+          <div class="fact-card"><b>Role</b><span>DevOps Engineer & Cloud Architect</span></div>
+          <div class="fact-card"><b>Email</b><span>robpalacios1@hotmail.com</span></div>
+          <div class="fact-card"><b>LinkedIn</b><span>in/robpalacios1</span></div>
+        </div>
+      </div>
+      <div class="focus-list reveal">
+        <div class="focus-item">
+          <div class="focus-icon">☁️</div>
+          <div><h4>Cloud Architecture</h4><p>Designing multi-AZ, highly available AWS environments with modular Terraform.</p></div>
+        </div>
+        <div class="focus-item">
+          <div class="focus-icon">☸️</div>
+          <div><h4>Container Orchestration</h4><p>Deploying and scaling microservices on Amazon EKS and ECS Fargate.</p></div>
+        </div>
+        <div class="focus-item">
+          <div class="focus-icon">🔄</div>
+          <div><h4>CI/CD & GitOps</h4><p>Automating build, test, and release pipelines with GitHub Actions and OIDC.</p></div>
+        </div>
+        <div class="focus-item">
+          <div class="focus-icon">📊</div>
+          <div><h4>Observability</h4><p>Instrumenting services with Prometheus, Grafana, and the ELK stack.</p></div>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- PORTFOLIO -->
-
-  <div id="portfolio">
-    <div class="container">
-      <div class="row p-4">
-        <div class="col-sm-12">
-          <h2>Portfolio / Portafolio</h2>
-          <div class="container-mid">
-            <div class="container">
-              <div class="row p-2">
-                <div class="col-sm-12">
-                  <h3>GITHUB</h3>
-                  <h4><em>Github</em></h4>
-                  <img src="images/github.png" width="100%" alt="Github Profile">
-                </div>
-                <div class="col-sm-12">
-                  <p>I have experience working with Control Version Software how Git, on Github you can find my
-                    proyects, repositories of contribution and study.</p>
-                </div>
-                <a href="https://github.com/robpalacios1" target="_blank">
-                  <button type="button" class="btn btn-outline-dark">Go Github</button>
-                </a>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>React-Website</h3>
-                  <h4><em>React-Router</em></h4>
-                  <img src="images/react-router.PNG" width="100%" alt="Book Suscribe">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development with React.js. </p>
-            </div>
-            <a href="https://react-website-plum.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Tinder Clone</h3>
-                  <h4><em>Tinder-Clone</em></h4>
-                  <img src="images/discord-clone.PNG" width="100%" alt="Book Suscribe">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development with React.js. </p>
-            </div>
-            <a href="https://tinder-clone-two.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Movie app Api</h3>
-                  <h4><em>Movie-app</em></h4>
-                  <img src="images/Movie-app.PNG" width="100%" alt="Book Suscribe">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development with React.js. </p>
-            </div>
-            <a href="https://movie-app-one.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Covid 19 Tracker</h3>
-                  <h4><em>Covid Tracker</em></h4>
-                  <img src="images/covid-tracker.PNG" width="100%" alt="Book Suscribe">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development with React.js. </p>
-            </div>
-            <a href="https://covid-tracker-ashen.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Netflix-Clone</h3>
-                  <h4><em>Netflix</em></h4>
-                  <img src="images/netflix-clone.PNG" width="100%" alt="Book Suscribe">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development with React.js. </p>
-            </div>
-            <a href="https://netflix-clone-seven-kappa.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Google-Clone</h3>
-                  <h4><em>Google</em></h4>
-                  <img src="images/Google-clone.PNG" width="100%" alt="Book Suscribe">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development with React.js. </p>
-            </div>
-            <a href="https://clone-9f2b0.web.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Tesla</h3>
-                  <h4><em>Tesla HomePage</em></h4>
-                  <img src="images/Tesla.PNG" width="100%" alt="Book Suscribe">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development with React.js. </p>
-            </div>
-            <a href="https://tesla-homepage-eight.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>List-Items</h3>
-                  <h4><em>List-Item</em></h4>
-                  <img src="images/list-items.PNG" width="100%" alt="Book Suscribe">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development with Javascript. </p>
-            </div>
-            <a href="https://list-items-mauve.vercel.app" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>BOOKS</h3>
-                  <h4><em>Books</em></h4>
-                  <img src="images/book.png" width="100%" alt="Book Suscribe">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/robpalacios1-bootstrap_website.github.io" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Amazon-clone</h3>
-                  <h4><em>Amazon</em></h4>
-                  <img src="images/amazon-clone.PNG" width="100%" alt="Form">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice full web development with React. </p>
-            </div>
-            <a href="https://amazon-clone-24az18rsa.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Facebook Messenger Clone</h3>
-                  <h4><em>Facebook Messenger</em></h4>
-                  <img src="images/facebook-messenger.PNG" width="100%" alt="Form">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice full web development with Reactjs and Firebase.
-              </p>
-            </div>
-            <a href="https://facebook-messenger-clone-beac5.web.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Login with firebase</h3>
-                  <h4><em>Login-Firebase</em></h4>
-                  <img src="images/login-firebase.PNG" width="100%" alt="Form">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice full web development with React. </p>
-            </div>
-            <a href="https://login-firebase.vercel.app/login" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>API-Pokemon</h3>
-                  <h4><em>Api Data</em></h4>
-                  <img src="images/Api-Pokemon.PNG" width="100%" alt="Form">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice full web development with React. </p>
-            </div>
-            <a href="https://pokemon-api-five.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Simple-CRUD</h3>
-                  <h4><em>CRUD (Create, Remove, Update and Destroy)</em></h4>
-                  <img src="images/simple_crud.PNG" width="100%" alt="Form">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice full web development with React. </p>
-            </div>
-            <a href="https://simple-crud-smoky.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Api Connect</h3>
-                  <h4><em>Api Data</em></h4>
-                  <img src="images/ApiData.PNG" width="100%" alt="Airbnb">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>participate in the complete development of the App with Next.js.
-              <p>
-            </div>
-            <a href="https://nextjs-black-theta.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Social Media Dashboard</h3>
-                  <h4><em>Social media</em></h4>
-                  <img src="images/Social-media.PNG" width="100%" alt="Airbnb">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I did the complete development of the App with React.js.
-              <p>
-            </div>
-            <a href="https://social-media-dashboard-three-ashen.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>API-Rick and Morty</h3>
-                  <h4><em>Api Data</em></h4>
-                  <img src="images/Api-Rick-and-Morty.PNG" width="100%" alt="Airbnb">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I did the complete development of the App with React.js, React-Router-Dom and styled-components.
-              <p>
-            </div>
-            <a href="https://rick-and-morty-react-three.vercel.app/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>E-COMMERCE</h3>
-                  <h4><em>E-commerce</em></h4>
-                  <img src="images/ecommerce.png" width="100%" alt="E-commerce">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>participate in the complete development of the web page design.
-              <p>
-            </div>
-            <a href="https://robpalacios1.github.io/ecommerce2/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>Airbnb-clone</h3>
-                  <h4><em>Airbnb</em></h4>
-                  <img src="images/Airbnb-clone.PNG" width="100%" alt="Airbnb">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>participate in the complete development of the web page design.
-              <p>
-            </div>
-            <a href="https://robpalacios1.github.io/AirBnB_clone/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>FORM</h3>
-                  <h4><em>Form</em></h4>
-                  <img src="images/form.png" width="100%" alt="Form">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/form/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>HOVER EFFECTS</h3>
-                  <h4><em>Hover</em></h4>
-                  <img src="images/hover.png" width="100%" alt="hover-effects">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/hover-effects/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button> <a href="" target="_blank"></a>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>JAGUAR XE</h3>
-                  <h4><em>Jaguar</em></h4>
-                  <img src="images/jaguar.png" width="100%" alt="landing_Jaguar">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/robpalacios1-landing_page.github.io/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>LANDING PAGE</h3>
-                  <h4><em>Landing</em></h4>
-                  <img src="images/landing.png" width="100%" alt="landing_test">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/landing/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>FALLING SHEETS</h3>
-                  <h4><em>Falling Sheets</em></h4>
-                  <img src="images/otono.png" width="100%" alt="Falling_sheets">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/otono/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>PHONES INFO</h3>
-                  <h4><em>Phone</em></h4>
-                  <img src="images/phones.png" width="100%" alt="Phones">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/robpalacios1-phones/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button> <a href="" target="_blank"></a>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>RGB CHALLENGUE</h3>
-                  <h4><em>RGB</em></h4>
-                  <img src="images/rgbchallengue.png" width="100%" alt="rgb_challengue">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/rgbchallenge/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>SHOES WEB</h3>
-                  <h4><em>Shoes</em></h4>
-                  <img src="images/shoes.png" width="100%" alt="shoes_web">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/shoesweb/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>STUDIO DEV</h3>
-                  <h4><em>Studio Dev</em></h4>
-                  <img src="images/studiodev.png" width="100%" alt="studiodev">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/studiodev/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>VACATIONS</h3>
-                  <h4><em>Vacations</em></h4>
-                  <img src="images/vacations.png" width="100%" alt="vacation_web">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/vacations/" target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-
-            <hr>
-
-            <div class="container">
-              <div class="row p-4">
-                <div class="col-sm-12">
-                  <h3>CRYPTO</h3>
-                  <h4><em>Crypto</em></h4>
-                  <img src="images/crypto.png" width="100%" alt="crypto">
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <p>I made this web page to put knowledge into practice in the web development layout without Responsive
-                Design. </p>
-            </div>
-            <a href="https://robpalacios1.github.io/crypto/." target="_blank">
-              <button type="button" class="btn btn-outline-dark">Go Project</button>
-            </a>
-          </div>
+<!-- TECH STACK -->
+<section id="stack">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-tag">Tech Stack</div>
+      <h2 class="section-title">Tools I build <span class="gradient-text">with daily</span></h2>
+      <p class="section-sub">A toolkit centered on infrastructure as code, container orchestration, and continuous delivery on AWS.</p>
+    </div>
+    <div class="stack-grid">
+      <div class="stack-card reveal">
+        <h3>☁️ Cloud & Infrastructure</h3>
+        <div class="stack-tags">
+          <span class="tag">AWS</span><span class="tag">Azure</span><span class="tag">Terraform</span><span class="tag">Ansible</span><span class="tag">CloudFormation</span>
+        </div>
+      </div>
+      <div class="stack-card reveal">
+        <h3>🐳 Containers & Orchestration</h3>
+        <div class="stack-tags">
+          <span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">Helm</span>
+        </div>
+      </div>
+      <div class="stack-card reveal">
+        <h3>🔄 CI/CD & Automation</h3>
+        <div class="stack-tags">
+          <span class="tag">GitHub Actions</span><span class="tag">Jenkins</span><span class="tag">GitLab CI</span><span class="tag">ArgoCD</span>
+        </div>
+      </div>
+      <div class="stack-card reveal">
+        <h3>🔒 Security & Monitoring</h3>
+        <div class="stack-tags">
+          <span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">ELK Stack</span><span class="tag">HashiCorp Vault</span>
+        </div>
+      </div>
+      <div class="stack-card reveal">
+        <h3>💻 Scripting & Languages</h3>
+        <div class="stack-tags">
+          <span class="tag">Python</span><span class="tag">Bash</span><span class="tag">PowerShell</span><span class="tag">YAML</span>
+        </div>
+      </div>
+      <div class="stack-card reveal">
+        <h3>🗄️ Databases & Tools</h3>
+        <div class="stack-tags">
+          <span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">Git</span><span class="tag">Linux</span>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- FOOTER -->
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-tag">Featured Projects</div>
+      <h2 class="section-title">DevOps projects <span class="gradient-text">in production form</span></h2>
+      <p class="section-sub">Infrastructure-as-code repositories covering AWS networking, Kubernetes orchestration, GitOps pipelines, and observability — all open source on GitHub.</p>
+    </div>
+    <div class="projects-grid">
 
-  <div id="footer">
-    <div class="container">
-      <div class="row p-4">
-        <div class="col-sm-12">
-          <p class="cpryt">&copy; Copyright 2020 All right reserved.</br>Made by Roberto Palacios.</p>
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">☸️</div>
+        </div>
+        <h3>Production-Ready AWS EKS Cluster</h3>
+        <p>Multi-AZ VPC and Amazon EKS cluster provisioned with modular Terraform, paired with a GitOps CI/CD pipeline: GitHub Actions builds and pushes Docker images to ECR, then rolls out to Kubernetes via OIDC-authenticated, credential-free deployments.</p>
+        <div class="project-tags">
+          <span class="tag">Terraform</span><span class="tag">Amazon EKS</span><span class="tag">GitHub Actions</span><span class="tag">OIDC</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/robpalacios1/aws-eks-terraform-cicd" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">🧩</div>
+        </div>
+        <h3>Multi-Orchestrator AWS Cluster: ECS Fargate & EKS</h3>
+        <p>A dual-orchestrator infrastructure that deploys the same containerized app to both ECS Fargate and EKS simultaneously — complete with an Application Load Balancer, Kubernetes LoadBalancer service, and a release-tag-triggered CI/CD pipeline.</p>
+        <div class="project-tags">
+          <span class="tag">Terraform</span><span class="tag">ECS Fargate</span><span class="tag">EKS</span><span class="tag">ALB</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/robpalacios1/aws-ecs-fargate-cicd" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">🗂️</div>
+        </div>
+        <h3>Kubernetes Microservices Infrastructure</h3>
+        <p>Reusable Terraform modules provisioning a VPC, three ECR repositories, an EKS cluster, and a managed PostgreSQL RDS instance to host a three-service microservices architecture (users, orders, products), backed by a remote S3 + DynamoDB state.</p>
+        <div class="project-tags">
+          <span class="tag">Terraform</span><span class="tag">EKS</span><span class="tag">ECR</span><span class="tag">RDS PostgreSQL</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/robpalacios1/k8s-microservices-terraform" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">📈</div>
+          <div class="star-badge">★ Starred</div>
+        </div>
+        <h3>FastAPI on EKS with Prometheus Observability</h3>
+        <p>A containerized FastAPI service deployed to Amazon EKS with Kubernetes Deployment, Service, and HPA manifests, instrumented with Prometheus-compatible metrics on <code>/metrics</code>, with image builds automated via GitHub Actions.</p>
+        <div class="project-tags">
+          <span class="tag">FastAPI</span><span class="tag">Kubernetes</span><span class="tag">Prometheus</span><span class="tag">Docker</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/robpalacios1/proyecto-k8s" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">🌐</div>
+        </div>
+        <h3>High-Availability AWS Infrastructure</h3>
+        <p>A multi-AZ VPC with public and private subnets, one NAT Gateway per availability zone, and four EC2 instances — designed to demonstrate fault-tolerant network topology with Terraform state stored remotely in S3 and locked via DynamoDB.</p>
+        <div class="project-tags">
+          <span class="tag">Terraform</span><span class="tag">AWS VPC</span><span class="tag">High Availability</span><span class="tag">EC2</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/robpalacios1/Terraform_HA" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-top">
+          <div class="project-icon">🧱</div>
+        </div>
+        <h3>Terraform AWS Infrastructure Starter</h3>
+        <p>A foundational Infrastructure-as-Code module provisioning a VPC, public subnet, security group, and an EC2 web server — built as a clean, reusable starting point for new AWS environments.</p>
+        <div class="project-tags">
+          <span class="tag">Terraform</span><span class="tag">AWS</span><span class="tag">EC2</span><span class="tag">VPC</span>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/robpalacios1/Terraform_Project" target="_blank" rel="noopener">View on GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-tag">Certifications</div>
+      <h2 class="section-title">Validated on <span class="gradient-text">AWS</span></h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <div class="cert-badge"><img src="https://images.credly.com/size/340x340/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png" alt="AWS Certified Cloud Practitioner badge" loading="lazy"></div>
+        <div>
+          <h3>AWS Certified Cloud Practitioner</h3>
+          <span>Amazon Web Services</span><br>
+          <a href="https://www.credly.com/badges/52447874-a217-4057-9139-2352ba7160cc" target="_blank" rel="noopener">View credential →</a>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-badge"><img src="https://images.credly.com/size/340x340/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png" alt="AWS Certified Solutions Architect – Associate badge" loading="lazy"></div>
+        <div>
+          <h3>AWS Certified Solutions Architect – Associate</h3>
+          <span>Amazon Web Services</span><br>
+          <a href="https://www.credly.com/badges/970ee258-bd85-4528-bc19-6d37a63a2f7d" target="_blank" rel="noopener">View credential →</a>
         </div>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- SCRIPT BOOTSTRAP -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-panel reveal">
+      <h2>Let's build something <span class="gradient-text">reliable</span> together</h2>
+      <p>Open to remote DevOps, Cloud Engineering and SRE opportunities. Reach out — I usually reply within a day.</p>
+      <div class="contact-links">
+        <a class="contact-chip" href="mailto:robpalacios1@hotmail.com">
+          <svg class="chip-icon icon-mail" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 5.5C3 4.67157 3.67157 4 4.5 4H19.5C20.3284 4 21 4.67157 21 5.5V18.5C21 19.3284 20.3284 20 19.5 20H4.5C3.67157 20 3 19.3284 3 18.5V5.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3.5 5.5L12 13L20.5 5.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          robpalacios1@hotmail.com
+        </a>
+        <a class="contact-chip" href="https://www.linkedin.com/in/robpalacios1/" target="_blank" rel="noopener">
+          <svg class="chip-icon icon-linkedin" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a class="contact-chip" href="https://github.com/robpalacios1" target="_blank" rel="noopener">
+          <svg class="chip-icon icon-github" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.955-.266 1.98-.399 3-.405 1.02.006 2.045.139 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- SCRIPT JS -->
-  <script src="js/script.js"></script>
+<footer>
+  <div class="wrap">
+    &copy; <span id="year"></span> Roberto Palacios — Built with Terraform-grade attention to detail.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
-
 </html>
