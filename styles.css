@@ -319,6 +319,11 @@ footer{
   border-top:1px solid var(--panel-border);
 }
 footer a{color:var(--cyan);}
+.footer-inner{
+  display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;
+}
+.footer-inner strong{color:var(--text);font-weight:700;}
+.footer-dot{color:var(--panel-border);}
 
 /* ---------- Reveal animation ---------- */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease;}
