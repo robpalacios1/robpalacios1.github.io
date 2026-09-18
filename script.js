@@ -1,23 +1,27 @@
 // Year
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Theme toggle (light/dark)
+const themeToggle = document.getElementById('themeToggle');
+const rootEl = document.documentElement;
+themeToggle.addEventListener('click', ()=>{
+  const goingLight = rootEl.getAttribute('data-theme') !== 'light';
+  if(goingLight){
+    rootEl.setAttribute('data-theme','light');
+  } else {
+    rootEl.removeAttribute('data-theme');
+  }
+  try{ localStorage.setItem('theme', goingLight ? 'light' : 'dark'); }catch(e){}
+});
+
 // Mobile menu toggle
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.querySelector('.nav-links');
 menuToggle.addEventListener('click', ()=>{
-  navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-  navLinks.style.position='absolute';
-  navLinks.style.top='64px';
-  navLinks.style.left='0';
-  navLinks.style.right='0';
-  navLinks.style.background='rgba(6,10,18,0.97)';
-  navLinks.style.flexDirection='column';
-  navLinks.style.padding='24px';
-  navLinks.style.gap='18px';
-  navLinks.style.borderBottom='1px solid rgba(255,255,255,0.08)';
+  navLinks.classList.toggle('open');
 });
 navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-  if(window.innerWidth<=920) navLinks.style.display='none';
+  if(window.innerWidth<=920) navLinks.classList.remove('open');
 }));
 
 // Typed role rotation
@@ -49,7 +53,7 @@ revealEls.forEach(el=>io.observe(el));
 // Header background on scroll
 const header = document.querySelector('header');
 window.addEventListener('scroll', ()=>{
-  header.style.background = window.scrollY>10 ? 'rgba(6,10,18,0.9)' : 'rgba(6,10,18,0.65)';
+  header.classList.toggle('scrolled', window.scrollY>10);
 });
 
 // Particle background
